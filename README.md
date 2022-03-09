@@ -1,2 +1,4 @@
-# CS50-Intro-to-CS
-This repository hosts my project and assignment files for the Harvard / edX CS50 Introduction to Computer Science course.
+# CS50 Final Project
+This repository hosts my final project for the Harvard / edX CS50 Introduction to Computer Science course. The project involves the development of a full-stack AI web application that allows students to practice their basic conversational skills in a foreign language. The web app features a chatbot that can understand the intent of the student’s dialog and respond accordingly thanks to the use of natural language processing, deep learning and cloud-based AI services. Students interact with the chatbot via a front end developed in HTML, CSS and JavaScript with Python as the server-side language, TensorFlow for deep learning and a SQL database to manage user and session data on the back end. 
+
+As of March 2022, the project is in the final stages of development. A full set of instructions for running the application is forthcoming.
