@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Select
+{% endblock %}
+
+{% block main %}
+
+<div class="container">
+    <h2>Hello! We're so glad to have you here in the World of Languages!</h2>
+    <p>Please select a language below to start practicing your conversational skills:</p>
+    <form action="/select" method="POST">
+        <select name="language">
+        <option disabled selected value="">Language</option>
+        {% for language in languages %}
+            <option value="{{ language }}">{{ language }}</option>
+        {% endfor %}
+        </select>
+        <!-- <p id="lets-practice">Great! Let's practice {{ selectedLanguage }}!</p> -->
+        <!-- <p id="voice-menu">Please select the voice you would like to use:</p>
+        <select class="form-control" id="select-voice">
+        <option disabled selected value="">Voice</option>
+        {% for voice in voices %}
+            <option value="{{ voice }}">{{ voice }}</option>
+        {% endfor %} -->
+        <button class="btn btn-primary" type="submit">Start</button>
+    </form>
+</div>
+
+{% endblock %}
